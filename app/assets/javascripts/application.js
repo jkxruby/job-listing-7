@@ -17,3 +17,33 @@
 //= require bootstrap/dropdown
 //= require bootstrap/modal
 //= require_tree .
+
+
+
+//----旋转木马02----
+// When the DOM is ready, run this function
+$(document).ready(function() {
+  //Set the carousel options
+  $('#quote-carousel').carousel({
+    pauseOnHover: true,
+    interval: 1000,
+  });
+    });
+//----旋转木马02----
+
+//-----旋转页-----
+$().ready(function(){
+     $('[rel="tooltip"]').tooltip();
+
+ });
+
+ function rotateCard(btn){
+     var $card = $(btn).closest('.card-container');
+     console.log($card);
+     if($card.hasClass('hover')){
+         $card.removeClass('hover');
+     } else {
+         $card.addClass('hover');
+     }
+ }
+//-----旋转页-----
