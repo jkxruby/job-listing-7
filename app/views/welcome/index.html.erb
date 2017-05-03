@@ -2,56 +2,30 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-         <div class="row box">
-           <div class="box-inner col-md-6 col-md-offset-3">
-             <h1 class="title"><strong>活 着 的 意 义 在 于 不 断 探 索</strong></h1>
-             <p class="slogan">
-               <br>
-               这里是探索者的领域
-               <br>
-               连接你我的生活与行动
-               <br>
-               马上开始寻找新生的可能性吧
-             </p>
-             <p class="lead">
-               <%= link_to '立即探索', jobs_path, class: 'btn btn-lg btn-success' %>
-             </p>
-           </div>
-         </div>
-    </div>
-  </div>
-</div>
-<!-- 海报 -->
-
-<!-- 01 -->
-
-<!-- <div class="content-section-a">
-   <div class="container-fluid">
-     <div class="col-lg-5 col-lg-offset-1 col-sm-push-4  col-sm-6">
-       <div class="row">
-           <%= image_tag 'pic-2.jpg', class: 'img-responsive' %>
+      <!-- <div class="job header">
+          <%= video_tag "Show.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video" %> -->
+             <div class="row box">
+               <div class="box-inner col-md-6 col-md-offset-3">
+                 <h1 class="title"><strong>活 着 的 意 义 在 于 不 断 探 索</strong></h1>
+                 <p class="slogan">
+                   <br>
+                   这里是探索者的领域
+                   <br>
+                   连接你我的生活与行动
+                   <br>
+                   马上开始寻找新生的可能性吧
+                  </p>
+                    <p class="lead">
+                      <%= link_to '立即探索', jobs_path, class: 'btn btn-lg btn-success' %>
+                    </p>
+                 </div>
+               </div>
+          <!-- </div> -->
        </div>
-     </div>
-   </div>
- </div> -->
-
-<!-- <div class="container">
-   <div class="content-section-b">
-      <div class="container-fluid">
-        <div class="col-lg-12 col-lg-offset-1 col-sm-push-2 col-sm-10">
-          <div class="row-fluid">
-            <div class="col-md-7">
-             <%= image_tag 'pic-3.png', class: 'img-responsive' %>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-</div> -->
-<!-- 01 -->
+</div>
 
-
-
+<!-- 海报 -->
 
 <!-- 中间图 -->
 <div class="container">
@@ -312,8 +286,37 @@
 
 
 <!-- 短片海报 -->
-
+<!-- <div class="content-section-c">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-4">
+         <%= video_tag "Show.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video" %>
+       </div>
+     </div>
+   </div>
+ </div> -->
 <!-- 结束短片海报 -->
+
+<!-- 尾部背景 -->
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>We are explorer</h1>
+            <h3>Get start your next explor</h3>
+        </hgroup>
+        <%= link_to '立即探索', jobs_path, class: 'btn btn-lg btn-success' %>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 尾部背景 -->
 
 <!-- 脚页 -->
     <div class="footer" id="footer">
