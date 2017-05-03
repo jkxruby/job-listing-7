@@ -177,6 +177,10 @@
 
  /*******结束导航栏********/
 
+ //--------短片海报---------
+
+ //--------结束短片海报------
+
  //-----------海报内容-----------
 
  .box {
@@ -197,6 +201,8 @@
         text-align: center; //左中右
         margin-bottom: 5px; //上下距离
         font-size: 40px;
+
+        color: white
     }
 
     .slogan {
@@ -215,11 +221,13 @@
         color: white;
     }
 }
+
+    .logo{
+      text-align: center; //左中右
+    }
   //---------结束海报内容---------
 
-  //---- 测试
 
-  //---- 测试
 
   //---------Content01---------
 
@@ -548,13 +556,13 @@ body {
 
 .card{
     background: none repeat scroll 0 0 #FFFFFF;
-    border-radius: 4px;
+    border-radius: 14px; // 反面上圆角
     color: #444444;
 }
 .card-container, .front, .back {
 	width: 100%;
-	height: 420px;
-	border-radius: 4px;
+	height: 450px; // 卡片的高度
+	border-radius: 14px;  // 下圆角
 	-webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
 -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
 box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
@@ -612,10 +620,11 @@ box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
 }
 .card .footer {
     border-top: 1px solid #EEEEEE;
-    color: #999999;
+    color: #999999; //底部按钮字体颜色（自动旋转）
     margin: 30px 0 0;
     padding: 10px 0 0;
     text-align: center;
+    border-radius: 5px;
 }
 .card .footer .social-links{
     font-size: 18px;
@@ -632,8 +641,8 @@ box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
 }
 .card .motto{
 		font-family: 'Arima Madurai', cursive;
-    border-bottom: 1px solid #EEEEEE;
-    color: #999999;
+    border-bottom: 1px solid #EEEEEE; //背面分割线颜色
+    color: #999999; // 背面座右铭字体颜色
     font-size: 14px;
     font-weight: 400;
     padding-bottom: 10px;
@@ -690,7 +699,7 @@ box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
     display: block;
 }
 .space-200{
-    height: 200px;
+    height: 0px; // 底部的高度，进度条gif已经靠到最紧了
     display: block;
 }
 .white-board{
@@ -788,3 +797,19 @@ box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
     }
 }
 //--------02旋转页---------
+
+
+//--------footer-------
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.body-content {
+  min-height: 100%;
+  padding-bottom: 60px;
+}
+.footer {
+  height: 60px;
+  margin-top: -60px;
+}
+//--------footer-------

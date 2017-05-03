@@ -11,15 +11,14 @@
 
     <body>
 
-        <div class="container-fluid">
+      <div class="container-fluid body-content">
+        <div class="content-inside">
           <div class="row">
             <%= render "common/navbar" %>
           </div>
-            <%= yield %>
-
+          <%= yield %>
         </div>
-
-        <%= render "common/footer" %>
-
+      </div>
+      <%= render "common/footer" %>
     </body>
 </html>
