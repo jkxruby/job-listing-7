@@ -30,8 +30,7 @@ class JobsController < ApplicationController
 
     if @job.save
       redirect_to jobs_path
-    else
-      render :new
+
     end
   end
 
