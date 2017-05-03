@@ -1,37 +1,20 @@
 <div class="container">
-    <div class="row">
-        <div class="col-sm-3 col-md-6">
-          <h1> <%= @job.title %> </h1>
+	<div class="row">
+      <div class="col-md-12">
+          <div class="box-te">
+              <div class="box-content">
+                  <h1 class="tag-title"><%= @job.title %></h1>
+                  <hr>
+                    <p>
+                      <%= simple_format(@job.description) %>
+                    </p>
+                  <br />
+                    <div class="text-center">
+                      <%= link_to("提交组队申请", new_job_resume_path(@job), :style => "font-size: 30px;") %>
+                    </div>
 
-            <p>
-              <%= simple_format(@job.description) %>
-
-            </p>
-       </div>
-    </div>
-</div>
-
-<!-- 装饰 -->
-<div class="container">
-    <div class="row">
-        <div class="col-sm-2 col-md-2">
-            <img src="http://thetransformedmale.files.wordpress.com/2011/06/bruce-wayne-armani.jpg"
-            alt="" class="img-rounded img-responsive" />
+               </div>
+          </div>
         </div>
-        <div class="col-sm-4 col-md-4">
-            <blockquote>
-                <p>Bruce Wayne</p> <small><cite title="Source Title">Gotham, United Kingdom  <i class="glyphicon glyphicon-map-marker"></i></cite></small>
-            </blockquote>
-                <p> <i class="glyphicon glyphicon-envelope"></i> masterwayne@batman.com
-                <br> 
-                <i class="glyphicon glyphicon-globe"></i> www.bootsnipp.com
-                <br>
-                <i class="glyphicon glyphicon-gift"></i> January 30, 1974</p>
-        </div>
-    </div>
-</div>
-<!-- 装饰 -->
-
-<div class="text-center">
-  <%= link_to("投交履历", new_job_resume_path(@job), :style => "font-size: 30px; text-decoration: underline;") %>
+   </div>
 </div>

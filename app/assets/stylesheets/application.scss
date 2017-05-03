@@ -177,9 +177,26 @@
 
  /*******结束导航栏********/
 
- //--------短片海报---------
+ //--------user index---------
 
- //--------结束短片海报------
+ .box-te {
+   background:#fff;
+   transition:all 0.2s ease;
+   border:2px dashed #dadada;
+   margin-top: 10px;
+   box-sizing: border-box;
+   border-radius: 5px;
+   background-clip: padding-box;
+   padding:0 20px 20px 20px;
+   min-height:200px;
+ }
+
+ .box-te:hover {
+   border:2px solid #525C7A;
+ }
+
+
+ //--------结束user index------
 
  //-----------海报内容-----------
 
