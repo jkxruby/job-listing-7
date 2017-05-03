@@ -30,9 +30,10 @@
           <thead>
             <tr>
                 <td>
-                    计划目标</td>
+                    计划地点</td>
                 <td>人数下限</td>
                 <td>人数上限</td>
+                <td>发布人</td>
                 <td>刊登时间</td>
             </tr>
 
@@ -48,6 +49,9 @@
                   </td>
                   <td>
                     <%= job.wage_upper_bound %>
+                  </td>
+                  <td>
+                    <%= job.name %>
                   </td>
                   <td>
                     <%= job.created_at %>
