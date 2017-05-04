@@ -3,6 +3,7 @@ class JobsController < ApplicationController
 
   def show
     @job = Job.find(params[:id])
+    @qr = RQRCode::QRCode.new(job_url(@job).to_s, :size => 6, :level => :h)
 
     if @job.is_hidden
       flash[:warning] = "This Job already archived"

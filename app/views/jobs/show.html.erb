@@ -1,3 +1,30 @@
+<!-- 二维码 -->
+<div id="overlay" onclick="off()">
+	<div id="text">扫一扫，分享给好友们
+		<%= raw @qr.as_html %>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+      <div class="col-md-6">
+				<div style="padding:80px pull-right">
+					<button type="button" class="btn btn-primary" onclick="on()">二维码</button>
+				</div>
+			</div>
+	</div>
+</div>
+
+<script>
+	function on() {
+	document.getElementById("overlay").style.display = "block";
+	}
+	function off() {
+	document.getElementById("overlay").style.display = "none";
+	}
+</script>
+<!-- 二维码 -->
+
 <div class="container">
 	<div class="row">
       <div class="col-md-12">
