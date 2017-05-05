@@ -166,7 +166,7 @@
  }
 }
  .navbar-default .navbar-brand {
-   color: #3ef2d6; //标题字体颜色
+   color: #FFD900; //标题字体颜色
 
    padding: 10px 15px; //上下10px，左右15px
    line-height: 30px; //文字行高
@@ -174,18 +174,18 @@
 
  .navbar-default .navbar-brand:hover,
  .navbar-default .navbar-brand:focus {
-   color: #1fe9ec; //鼠标放置在链接上的文字颜色
+   color: #F82060; //鼠标放置在链接上的文字颜色
    background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
  }
 
   .navbar-default .navbar-nav > li > a{
-   color: #3ef2d6; //注册登录（显示的颜色）-亮青
+   color: #FFD900; //注册登录（显示的颜色）-yellow
 
  }
 
  .navbar-default .navbar-nav > li > a:hover,
  .navbar-default .navbar-nav > li > a:focus {
-   color: #1fe9ec; //注册登录（隐藏的颜色）-暗蓝
+   color: #F82060; //注册登录（隐藏的颜色）-暗蓝
    background-color: transparent;
  }
  .navbar-default .navbar-nav > .active > a,
@@ -230,7 +230,7 @@
  //-----------海报内容-----------
 
  .box {
-    background-image: url("http://ww4.sinaimg.cn/large/006tNbRwgy1ff8hc3r5t7j31kw0w07wj.jpg"); //header是背景图片名字
+    background-image: url("http://ww3.sinaimg.cn/large/006tNbRwgy1ffavgxerarj31kw10p7wt.jpg"); //header是背景图片名字
     background-repeat: no-repeat; //图片不重复平铺
     background-size: cover; //海报适应屏幕最大化
     margin-bottom: 20px;
@@ -240,7 +240,7 @@
         color: #000000; //标题颜色
         padding-bottom: 15px;
         margin-top: 70px; //海报图高度
-        margin-bottom: 240px; //海报图高度
+        margin-bottom: 340px; //海报图高度
     }
 
     .title {
@@ -975,7 +975,7 @@ Image credits: unsplash.com
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url("http://ww2.sinaimg.cn/large/006tNbRwgy1ff8hdsr6lpj31kw11xu15.jpg");;
+  background-image: url("http://ww1.sinaimg.cn/large/006tNbRwgy1ffavlgmrplj31kw0zkb29.jpg");;
 }
 .fade-carousel .slides .slide-2 {
   background-image: url(http://upload-images.jianshu.io/upload_images/4630775-5bd8dc262194ad98.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240);
@@ -1052,5 +1052,152 @@ border-collapse: collapse;
 //========= 二维码 ==========
 
 //=========板式=============
+body, html {
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-image: url("http://ww2.sinaimg.cn/large/006tNbRwgy1ffajjc9qnvj31hc12wt9n.jpg");
+}
 
+.coupon {
+    border: 3px dashed #bcbcbc;
+    border-radius: 10px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+    "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+.coupon #head {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-height: 56px;
+}
+
+.coupon #footer {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#title .visible-xs {
+    font-size: 12px;
+}
+
+.coupon #title img {
+    font-size: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .coupon #title img {
+        height: 15px;
+    }
+}
+
+.coupon #title span {
+    float: right;
+    margin-top: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.coupon-img {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.items {
+    margin: 15px 0;
+}
+
+.usd, .cents {
+    font-size: 20px;
+}
+
+.number {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+sup {
+    top: -15px;
+}
+
+#business-info ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#business-info ul li {
+    display: inline;
+    text-align: center;
+}
+
+#business-info ul li span {
+    text-decoration: none;
+    padding: .2em 1em;
+}
+
+#business-info ul li span i {
+    padding-right: 5px;
+}
+
+.disclosure {
+    padding-top: 15px;
+    font-size: 11px;
+    color: #bcbcbc;
+    text-align: center;
+}
+
+.coupon-code {
+    color: #333333;
+    font-size: 11px;
+}
+
+.exp {
+    color: #f34235;
+}
+
+.print {
+    font-size: 14px;
+    float: right;
+}
+
+
+
+/*------------------dont copy these lines----------------------*/
+
+
+
+#quicknav ul {
+    margin: 30;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#quicknav ul li {
+    display: inline;
+}
+
+#quicknav ul li a {
+    text-decoration: none;
+    padding: .2em 1em;
+}
+
+// .btn-danger,
+// .btn-success,
+// .btn-info,
+// .btn-warning,
+// .btn-primary {
+//     width: 180px;
+// }
+
+.btn-default {
+    margin-bottom: 0px;
+}
+/*-------------------------------------------------------------*/
 //=========板式=============
