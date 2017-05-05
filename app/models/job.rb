@@ -17,5 +17,10 @@ class Job < ApplicationRecord
     self.save
   end
 
+  def publish!
+    self.is_hidden = false
+    self.save
+  end
+
   has_many :resumes
 end

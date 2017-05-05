@@ -1,0 +1,22 @@
+<div class="content">
+  <h3>找事</h3>
+  <% if @jobs.blank? %>
+    <div class="text-center">
+      <h4>没有符合搜索条件的资料哦</h4>
+      <br />
+
+      <%= link_to("立即探索", jobs_path, class: "btn btn-sm btn-success") %>
+    </div>
+  <% else %>
+    <div class="table">
+      <tbody>
+        <% @jobs.each do |job| %>
+        <div><%= job.title %></div>
+        <% end %>
+      </tbody>
+    </div>
+    <div class="text-center">
+      <%= will_paginate(@jobs, renderer: BootstrapPagination::Rails) %>
+    </div>
+  <% end %>
+</div>
